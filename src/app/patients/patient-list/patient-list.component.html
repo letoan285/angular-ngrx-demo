@@ -1,0 +1,36 @@
+<div class="container patient list">
+  <div class="card">
+    <div class="card-header">
+      <h1> Patient List </h1>
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>Card ID</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patient of patients; let i = index">
+            <td>{{i+1}}</td>
+            <td><a [routerLink]="['/patients/detail', patient.id]"><img class="patient-avatar" src="{{ patient.avatar }}" alt=""> </a> </td>
+            <td> <a [routerLink]="['/patients/detail', patient.id]"> {{patient.name}}</a> </td>
+            <td>{{patient.card_id}}</td>
+            <td>
+              <a class="btn btn-sm btn-primary" [routerLink]="['/patients/edit', patient.id]">edit</a>
+              <button class="btn btn-sm btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-footer">
+      <a routerLink="/patients" class="btn btn-warning">Come back</a>
+    </div>
+  </div>
+</div>

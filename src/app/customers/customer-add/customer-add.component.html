@@ -1,0 +1,75 @@
+<h3>Add Customer</h3>
+
+<div class="form-inline mb-4">
+  <form [formGroup]="customerForm" (submit)="createCustomer()" class="form-inline mb-4">
+        <label class="sr-only" for="Name">Name</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="customer_name" placeholder="Customer name">
+        </div>
+
+        <label class="sr-only" for="Phone">Email</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="email" placeholder="Email">
+        </div>
+
+        <label class="sr-only" for="avatar">Avatar</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="avatar" placeholder="Avatar Link">
+        </div>
+
+        <label class="sr-only" for="Phone">username</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="username" placeholder="Username">
+        </div>
+
+        <label class="sr-only" for="Phone">Phone</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="phone" placeholder="Phone">
+        </div>
+
+        <label class="sr-only" for="Address">City</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="city" placeholder="City">
+        </div>
+
+
+        <label class="sr-only" for="Address">District</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="district" placeholder="District">
+        </div>
+
+        <label class="sr-only" for="Address">Commune</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="commune" placeholder="Commune">
+        </div>
+
+        <label class="sr-only" for="Order_id">Order ID</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="order_id" placeholder="order_id">
+        </div>
+
+        <label class="sr-only" for="Order_id">Latitute</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="lat" placeholder="Latitute">
+        </div>
+
+        <label class="sr-only" for="Order_id">Longitute</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" formControlName="lng" placeholder="Longitute">
+        </div>
+
+        <label class="sr-only" for="membership">Sex</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" formControlName="sex" placeholder="Sex...">
+        </div>
+
+        <label class="sr-only" for="membership">Active</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" formControlName="active" placeholder="Active...">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary mb-2">Add new Customer</button>
+
+        </div>
+  </form>
+</div>
